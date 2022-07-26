@@ -1,3 +1,6 @@
+Hi! This is just a test so I can learn how to add Auth0 to the main NoStateNode project ... wich you can see in other repository. 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
