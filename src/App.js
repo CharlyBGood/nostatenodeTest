@@ -12,7 +12,9 @@ function App() {
   return (
     <div className="App">
       <div className="header-nav">
+        <a href="/">
         <h1>NoStateNode</h1>
+        </a>
         <div className="logo-loggin">
           <img
             className="logo-img"
