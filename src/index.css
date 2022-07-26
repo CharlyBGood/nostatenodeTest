@@ -19,6 +19,7 @@ code {
   border: 1px solid #000;
   padding: .7em;
   font-family: 'Source Code Pro', monospace;
+  margin: 1em;
 }
 
 .header-img {

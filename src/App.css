@@ -45,7 +45,7 @@
   align-items: center;
   max-width: 100%;
   background-color: var(--soft-black);
-  max-width: 100%;
+  margin: 0;
 }
 
 .header-nav h1 {
@@ -53,14 +53,18 @@
   letter-spacing: .1em;
   padding: .3em;
   text-shadow: 2px 2px 2px #363636;
+  margin: .5em;
 }
 
 .logo-img {
   width: 5em;
+  margin: .5em;
 }
 
 .logo-loggin {
   display: flex;
   align-items: center;
   gap: 1em;
+  width: 80%;
+  justify-content: flex-end;
 }
