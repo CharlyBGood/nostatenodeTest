@@ -7,10 +7,6 @@ body {
   color: var(--wheat);
 }
 
-code {
-  font-family: 'Source Code Pro', monospace;
-}
-
 .log-button {
   background-color: var(--soft-black);
   color: #f0ab2a;
