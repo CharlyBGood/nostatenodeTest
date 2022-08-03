@@ -3,7 +3,7 @@ import "../stylesheets/Navbar.css";
 
 function Navbar() {
   return (
-    <div className="navbar-logos">
+    <nav className="navbar-logos">
       <a href="/">
         <h1>NoStateNode</h1>
       </a>
@@ -12,7 +12,7 @@ function Navbar() {
         src={require("../img/horsecoin.png")}
         alt="nostatenode horse logo"
       />
-    </div>
+    </nav>
   );
 }
 

@@ -7,9 +7,9 @@ const Profile = () => {
   const { user, isAuthenticated } = useAuth0();
   return (
     isAuthenticated && (
-      <div className="main-container">
+      <div className="profile-container">
         {/* <img className="header-img" src={user.picture} alt={user.name} /> */}
-        <h2>Hola, {user.name}, qué lindo es que estés aquí!</h2>
+        <h2>¡Hola, {user.name}, comienza compartiendo recursos!</h2>
         {/* <p>Iniciaste sesión con este correo: {user.email}</p> */}
 
         {/* <JSONPretty className="json-div" data={user} /> */}
