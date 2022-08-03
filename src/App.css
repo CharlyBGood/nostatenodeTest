@@ -5,34 +5,32 @@
   --orange-wheat: #f0ab2a;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 16px;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;  
+  justify-content: center;
+  text-align: center;
+}
+
 .header-nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
   max-width: 100%;
   background-color: var(--soft-black);
   margin: 0;
-}
-
-.header-nav h1, .header-nav a {
-  font-size: 1.2em;
-  letter-spacing: .1em;
-  padding: .3em;
-  text-shadow: 2px 2px 2px #363636;
-  margin: .5em;
-  text-decoration: none;
-  color: var(--wheat);
-}
-
-.logo-img {
-  width: 5em;
-  margin: .5em;
-}
-
-.logo-loggin {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-  width: 80%;
-  justify-content: flex-end;
 }

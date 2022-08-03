@@ -9,7 +9,7 @@ function Navbar() {
       </a>
       <img
         className="logo-img"
-        src={require("../img/lunaticoin.png")}
+        src={require("../img/horsecoin.png")}
         alt="nostatenode horse logo"
       />
     </div>
