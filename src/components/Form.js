@@ -5,7 +5,7 @@ function Form() {
     const [newLinkTitle, setNewLinkTitle] = useState() 
     const handleSubmit = (e)=> {
         e.preventDefault();
-        localStorage.setItem("hello", "yeah");
+        localStorage.setItem("link", newLinkTitle);
     }
   return (
     <div className="main-container">
@@ -16,8 +16,8 @@ function Form() {
         className="form-title" 
         onChange={(e)=> setNewLinkTitle(e.target.value)} />
         <label>Link URL</label>
-        <input placeholder="URL" itemType="url" className="form-content" />
-        <button className="form-btn" onClick={()=> alert(newLinkTitle)}>Add</button>
+        <input placeholder="URL" type="url" className="form-content" />
+        <button className="form-btn">Add</button>
       </form>
     </div>
   );
