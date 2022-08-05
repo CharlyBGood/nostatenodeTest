@@ -9,7 +9,7 @@ const Profile = () => {
     isAuthenticated && (
       <div className="profile-container">
         {/* <img className="header-img" src={user.picture} alt={user.name} /> */}
-        <h2>¡Hola, {user.name}, comienza compartiendo recursos!</h2>
+        <h2>¡Hola, {user.name}, comienza organizando recursos!</h2>
         {/* <p>Iniciaste sesión con este correo: {user.email}</p> */}
 
         {/* <JSONPretty className="json-div" data={user} /> */}
