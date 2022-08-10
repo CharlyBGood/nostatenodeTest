@@ -19,22 +19,31 @@ body {
   max-height: 100%;
   background-color: var(--dark-black);
   color: var(--wheat);
+  font-size: 16px;
 }
 
-/* .App {
+.App {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-} */
+}
 
 .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 100%;
   background-color: var(--soft-black);
+  top: 0;
+  position: fixed;
+  width: 100%;
 }
 
 .container {
@@ -67,4 +76,41 @@ footer p, footer a {
   margin: 0;
   padding: .5em;
   text-decoration: none;
+}
+
+@media screen and ( max-width: 750px ) {
+  .App {
+    justify-content: flex-end;
+  }
+  .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+  }
+
+  .main-container, .table-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 100%;
+  } 
+  .nav-container {
+    flex-direction: column;
+    background-color: transparent;
+  }
+
+  .navbar-logos {
+    opacity: .8;
+    justify-content: center;
+  }
 }

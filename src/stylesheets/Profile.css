@@ -13,7 +13,7 @@
   border: 1px solid #000;
   padding: 0.7em;
   font-family: "Source Code Pro", monospace;
-  margin: 1em;
+  margin: 1em 3em;
 }
 
 .header-img {
@@ -29,4 +29,10 @@
   /* margin: 9vw 0; */
   position: relative;
   top: 13%;
+}
+
+@media screen and (max-width: 750px) {
+  .profile-container {
+    margin: 53% 1em 1em;
+  }
 }

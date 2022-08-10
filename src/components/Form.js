@@ -17,6 +17,7 @@ function Form() {
         onChange={(e)=> setNewLinkTitle(e.target.value)} />
         <label>Link URL</label>
         <input placeholder="URL" type="url" className="form-content" />
+        <textarea rows="6" className="form-content" placeholder="Sing your song here..."></textarea>
         <button className="form-btn">Add</button>
       </form>
     </div>

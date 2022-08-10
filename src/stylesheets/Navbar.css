@@ -5,6 +5,7 @@
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
+  margin: .5rem;
 }
 
 .navbar-logos h1,
