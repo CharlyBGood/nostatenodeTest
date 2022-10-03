@@ -5,34 +5,18 @@
   margin: 2em auto;
 }
 
-.log-button {
-  background-color: var(--soft-black);
-  color: #f0ab2a;
-  cursor: pointer;
-  border-radius: 0.4em;
-  border: 1px solid #000;
-  padding: 0.7em;
-  font-family: "Source Code Pro", monospace;
-  margin: 1em 3em;
-}
-
 .header-img {
   margin: 1em;
   border-radius: 3em;
 }
 
 .profile-container h2 {
-  max-width: 45em;
-  font-size: 1.5em;
+  font-size: 1.1em;
   font-weight: 700;
   line-height: 1.1;
   /* margin: 9vw 0; */
-  position: relative;
-  top: 13%;
 }
 
-@media screen and (max-width: 750px) {
-  .profile-container {
-    margin: 53% 1em 1em;
-  }
+@media screen and (max-width: 850px) {
+  
 }

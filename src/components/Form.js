@@ -1,23 +1,36 @@
 import React, {useState} from "react";
+import { v4 as uuidv4 } from "uuid"
 import "../stylesheets/Form.css";
 
-function Form() {
-    const [newLinkTitle, setNewLinkTitle] = useState() 
-    const handleSubmit = (e)=> {
+function Form(props) {
+    const [newLink, setNewLink] = useState("");
+
+    const handleChange = (e) => {
+      setNewLink(e.target.value)
+    }
+
+    const handleSend = (e)=> {
         e.preventDefault();
-        localStorage.setItem("link", newLinkTitle);
+
+        const newLinks = {
+          id: uuidv4(),
+          title: newLink
+          // URL: newLink,
+        }
+        props.onSubmit(newLinks)
+        // localStorage.setItem("link", newLinkTitle);
     }
   return (
     <div className="main-container">
-      <form onSubmit={handleSubmit} className="form-container">
+      <form onSubmit={handleSend} className="form-container">
         <label>Descriptive Title</label>
-        <input placeholder="Título" 
+        <input placeholder="Title" 
         type="text" 
         className="form-title" 
-        onChange={(e)=> setNewLinkTitle(e.target.value)} />
-        <label>Link URL</label>
-        <input placeholder="URL" type="url" className="form-content" />
-        <textarea rows="6" className="form-content" placeholder="Sing your song here..."></textarea>
+        onChange={handleChange} />
+        {/* <label>Link URL</label>
+        <input placeholder="URL" type="url" className="form-content" onChange={handleChange} /> */}
+        {/* <textarea rows="6" className="form-content" placeholder="Sing your song here..."></textarea> */}
         <button className="form-btn">Add</button>
       </form>
     </div>

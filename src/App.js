@@ -3,7 +3,7 @@ import LoginButton from "./components/LoginButton";
 import LogoutButton from "./components/LogoutButton";
 import Profile from "./components/Profile";
 import Navbar from "./components/Navbar";
-import Form from "./components/Form";
+// import Form from "./components/Form";
 import Table from "./components/Table";
 
 import { useAuth0 } from "@auth0/auth0-react";
@@ -20,8 +20,8 @@ function App() {
       </div>
       <Profile />
       <div className="container">         
-        {!isAuthenticated ? "¡Por favor, inicia sesión para ver el contenido!" : <Form />}
-        {!isAuthenticated ? " " : <Table />}
+        {!isAuthenticated ? "¡Por favor, inicia sesión para ver el contenido!" : <Table />}
+        {/* {!isAuthenticated ? " " : <Table />} */}
       </div>
 
       <footer>
