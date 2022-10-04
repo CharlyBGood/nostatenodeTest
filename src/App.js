@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Table from "./components/Table";
 
 import { useAuth0 } from "@auth0/auth0-react";
+import Footer from "./components/Footer";
 
 function App() {
   const { isAuthenticated, isLoading } = useAuth0();
@@ -23,8 +24,8 @@ function App() {
         {!isAuthenticated ? "¡Por favor, inicia sesión para ver el contenido!" : <Table />}
         {/* {!isAuthenticated ? " " : <Table />} */}
       </div>
-
-      <footer>
+      <Footer />
+      {/* <footer>
         <p>
           by{" "}
           <a
@@ -35,7 +36,7 @@ function App() {
             Charly BGood
           </a>
         </p>
-      </footer>
+      </footer> */}
     </div>
   );
 }

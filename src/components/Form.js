@@ -5,14 +5,13 @@ import "../stylesheets/Form.css";
 function Form(props) {
   const [input, setInput] = useState("");
   const [url, setUrl] = useState("");
+  const form = document.getElementById("form");
 
   const handleURL = (e) => {
     setUrl(e.target.value);
-    console.log(e.target.value);
   };
 
   const handleChange = (e) => {
-    console.log(e.target.value);
     setInput(e.target.value);
   };
 
@@ -25,10 +24,11 @@ function Form(props) {
     };
     props.onSubmit(newLink);
     localStorage.setItem("link", newLink.text);
+    form.reset();
   };
   return (
     <div className="main-container">
-      <form onSubmit={handleSend} className="form-container">
+      <form id="form" onSubmit={handleSend} className="form-container">
         <label>Descriptive Title</label>
         <input
           placeholder="Title"
