@@ -29,15 +29,15 @@ function Table() {
             </tr>
           </thead>
           <tbody className="table-body">
-              {links.map((link) => (
-                <Link
-                  key={link.id}
-                  id={link.id}
-                  text={link.text}
-                  url="https://bitcoin.org"
-                  deleteTask={deleteLink}
-                />
-              ))}
+            {links.map((link) => (
+              <Link
+                key={link.id}
+                id={link.id}
+                text={link.text}
+                url={link.url}
+                deleteLink={deleteLink}
+              />
+            ))}
           </tbody>
         </table>
       </div>
