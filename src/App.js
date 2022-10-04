@@ -20,23 +20,14 @@ function App() {
         {isAuthenticated ? <LogoutButton /> : <LoginButton />}
       </div>
       <Profile />
-      <div className="container">         
-        {!isAuthenticated ? "¡Por favor, inicia sesión para ver el contenido!" : <Table />}
-        {/* {!isAuthenticated ? " " : <Table />} */}
+      <div className="container">
+        {!isAuthenticated ? (
+          "¡Por favor, inicia sesión para ver el contenido!"
+        ) : (
+          <Table />
+        )}        
       </div>
       <Footer />
-      {/* <footer>
-        <p>
-          by{" "}
-          <a
-            href="https://github.com/CharlyBGood/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Charly BGood
-          </a>
-        </p>
-      </footer> */}
     </div>
   );
 }
