@@ -57,7 +57,12 @@
   }
 
   .navbar-logos {
+    margin: 0;
     justify-content: center;
+  }
+
+  .logo-img {
+    margin: 0;
   }
 
   .log-button {
