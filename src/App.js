@@ -12,7 +12,11 @@ import Footer from "./components/Footer";
 function App() {
   const { isAuthenticated, isLoading } = useAuth0();
 
-  if (isLoading) return <h1>Iniciando sesión.....</h1>;
+  if (isLoading) return 
+  <div className="container">
+    <h1>Iniciando sesión.....</h1>;
+  </div>
+  
   return (
     <div className="App">
       <div className="nav-container">
